@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Selectors with CSS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Koki Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#aboutp">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#proj">Projects</a></li>
+        <li><a href="https://github.com/KokeHaus/koki-go">Go-App</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+      <div class="AboutMeCard">
+          <aside><p>About</p></aside>
+          <div class="card-body">
+            <p id="aboutp">SpongeBob SquarePants is the one of the ten main characters 
+              of the animated franchise of the same name. He was designed by the former marine biologist, Stephen Hillenburg.
+               Hillenburg based SpongeBob on Bob the Sponge, a character he had created for his educational book "The Intertidal Zone" in the late 1980s.</p>
+          </div>
+      </div>
+
+
+      <div class="projects">
+        <aside id="proj"><p>Projects</p></aside>
+          <ul>
+            <li><a href="https://spongebob.fandom.com/wiki/SpongeBob_SquarePants_(character)"><img src = "sponge.png"></a></li>
+            <li><a href="https://github.com/KokeHaus/koki-go"><img src="baduk.webp"></a></li>
+          </ul>
+      </div>
+
+      <div id="contact">
+        <div class="container">
+          <form action="action_page.php">
+        
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email...">
+        
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div>
+       
+    </div>
+     
+  </main>
+
+  <footer>
+    <span>Thanks for visiting!</span>
+  </footer>
+</body>
+
+</html>
